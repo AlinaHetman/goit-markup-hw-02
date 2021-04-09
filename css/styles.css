@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/raleway-v19-latin-700.eot");
+    src: local(""), url("../fonts/raleway-v19-latin-700.woff2") format("woff2"), url("../fonts/raleway-v19-latin-700.woff") format("woff");
+    font-display: swap;
+}
+:root {
+    --main-text-cl: #212121;
+    --tittle-cl: #2196f3;
+    --alt-text-cl: #757575;
+    --alt-tittle-cl: #ffffff;
+
+    --footer-bg: #2f303a;
+    --second-bg: #f5f4fa;
+    --button-bg: #2196f3;
+
+    --main-font: "Roboto", sans-serif;
+    --tittle-font: "Raleway", sans-serif;
+}
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-cl);
+}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px 1px 1px 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden;
+}
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+.link .link-current {
+    color: var(--tittle-cl);
+}
+.link-current {
+    color: var(--tittle-cl);
+}
+.link:hover,
+.link:focus {
+    color: var(--tittle-cl);
+}
+.list {
+    list-style: none;
+}
+
+.address {
+    font-style: inherit;
+}
+.link-address {
+    color: var(--alt-tittle-cl);
+}
+.btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 62;
+    color: var(--main-text-cl);
+    background-color: var(--second-bg);
+    border: none;
+}
+.btn:hover,
+.btn:focus {
+    background-color: var(--button-bg);
+    color: var(--alt-tittle-cl);
+}
+.pointer {
+    cursor: pointer;
+}
+.page-tittle {
+    font-family: var(--main-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.section-tittle {
+    font-family: var(--main-font);
+    font-size: 36px;
+    line-height: 1, 16;
+}
+.label {
+    font-family: var(--tittle-font);
+    font-size: 26px;
+    line-height: 1, 19;
+    color: var(--main-text-cl);
+}
+.label-second {
+    color: var(--tittle-cl);
+}
+
+.service-item {
+    line-height: 1, 14;
+    text-transform: uppercase;
+}
+
+.service-text {
+    color: var(--alt-text-cl);
+}
+
+.team-item {
+    text-align: center;
+}
+
+.team-item-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 18;
+}
+
+.team-position {
+    color: var(--alt-text-cl);
+}
+.product-list-item {
+    text-align: center;
+}
+.product-item {
+    font-size: 18px;
+    line-height: 2, 0;
+    letter-spacing: 0.06em;
+}
+
+.product-section {
+    font-size: 16px;
+    line-height: 1, 87;
+    color: var(--alt-text-cl);
+}
+
+.dark-bg {
+    background-color: var(--footer-bg);
+    color: var(--alt-text-cl);
+}
+.dark-bg .page-tittle {
+    color: var(--alt-tittle-cl);
+}
+.dark-bg .label {
+    color: var(--alt-tittle-cl);
+}
+.dark-bg .btn {
+    color: var(--alt-tittle-cl);
+    background-color: var(--button-bg);
+}
+.grey-bg {
+    background-color: var(--second-bg);
+}
