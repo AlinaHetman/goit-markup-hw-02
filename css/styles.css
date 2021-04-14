@@ -123,6 +123,7 @@ body {
 }
 
 .service-item {
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
     font-weight: bold;
@@ -136,8 +137,7 @@ body {
 
 .team-item {
     text-align: center;
-    letter-spacing: 0.03em;
-}
+    
 
 .team-item-name {
     font-weight: 500;
