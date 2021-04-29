@@ -29,7 +29,22 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-text-cl);
 }
-.visually-hidden {
+h1,
+h2,
+h3,
+ul,
+p {
+    margin-top: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+*.visually-hidden {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px 1px 1px 1px);
@@ -38,6 +53,23 @@ body {
     width: 1px !important;
     height: 1px !important;
     overflow: hidden;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-bottom: -30px;
+}
+.item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .link {
     color: inherit;
@@ -61,9 +93,33 @@ body {
     color: var(--tittle-cl);
 }
 .list {
+    margin: 0;
+    padding-left: 0;
     list-style: none;
 }
+.logo {
+    display: inline-block;
+    margin-right: 93px;
+}
+.menu {
+    display: inline-flex;
+}
+.menu-item:not(:last-child) {
+    margin-right: 50px;
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
+.header-item {
+    margin-left: 40px;
+}
+.header-address {
+    margin-left: 331px;
+}
 .address {
     font-style: inherit;
 }
@@ -77,7 +133,10 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-text-cl);
     background-color: var(--second-bg);
+    border-radius: 4px;
     border: none;
+    box-shadow: 0px 4px 4px rgba;
+    padding: 6px 22px;
 }
 .btn:hover,
 .btn:focus {
@@ -95,12 +154,20 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team {
+    background-color: var(--second-bg);
+}
 .section-tittle {
     font-family: var(--main-font);
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
 }
 .label {
     font-family: var(--tittle-font);
@@ -134,9 +201,12 @@ body {
     color: var(--alt-text-cl);
     letter-spacing: 0.03em;
 }
-
+.products {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+}
 .team-item {
     text-align: center;
+    flex-basis: calc((100% - 4 * 30px) / 4);
 }
 
 .team-item-name {
